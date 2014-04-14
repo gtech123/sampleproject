@@ -26,10 +26,10 @@ xcodebuild -target "sampleproject" OBJROOT="$build_location/obj.root" SYMROOT="$
 
 #zip dYSM file for distribution
 cd "$build_location/sym.root/Release-iphoneos/" || die "no such directory"
-rm -f "sample.app.dSYM.zip"
-zip -r "sample.app.dSYM.zip" "sample.app.dSYM"
+rm -f "$appname.app.dSYM.zip"
+zip -r "$appname.app.dSYM.zip" "$appname.app.dSYM"
   
-xcrun -sdk iphoneos PackageApplication -v "$build_location/sym.root/Release-iphoneos/sample.app" -o "$build_location/sample.ipa" --sign "$certificate"   
+xcrun -sdk iphoneos PackageApplication -v "$build_location/sym.root/Release-iphoneos/$appname.app" -o "$build_location/$appname.ipa" --sign "$certificate"   
 
 deployToTestFlight
 
