@@ -27,6 +27,7 @@ xcodebuild -target "sampleproject" OBJROOT="$build_location/obj.root" SYMROOT="$
 cd "$build_location/sym.root/Release-iphoneos/" || die "no such directory"
 rm -f "sampleproject.app.dSYM.zip"
 zip -r "sampleproject.app.dSYM.zip" "sampleproject.app.dSYM"
+zip -r sampleproject.app.dSYM.zip . -i sampleproject.app.dSYM
   
 xcrun -sdk iphoneos PackageApplication -v "$build_location/sym.root/Release-iphoneos/sampleproject.app" -o "$build_location/sampleproject.ipa" --sign "$certificate"   
 
