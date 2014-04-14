@@ -1,6 +1,6 @@
 appname="sampleproject"
-target_name="$appname"
-sdk="iphoneos"
+target_name="$appname" 
+sdk="iphoneos" 
 certificate="iPhone Distribution: HCL Technologies Ltd"
 project_dir="$1/$appname"
 build_location="/Users/admin/Documents/Builds/$appname"
