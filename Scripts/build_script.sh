@@ -3,7 +3,7 @@ target_name="$appname"
 sdk="iphoneos"
 certificate="iPhone Distribution: HCL Technologies Ltd"
 project_dir="$1/$appname"
-build_location="/Users/admin/Documents/Builds/sample"
+build_location="/Users/admin/Documents/Builds/sampleproject"
 
 function deployToTestFlight    
 {
@@ -21,7 +21,7 @@ fi
 
 
 cd /Users/admin/Documents/sampleproject/
-xcodebuild -target "sample" OBJROOT="$build_location/obj.root" SYMROOT="$build_location/sym.root"
+xcodebuild -target "sampleproject" OBJROOT="$build_location/obj.root" SYMROOT="$build_location/sym.root"
 
 
   
