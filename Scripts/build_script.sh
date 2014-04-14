@@ -21,7 +21,7 @@ fi
 
 
 cd /Users/admin/Documents/$appname/
-xcodebuild -target "$appname" OBJROOT="$build_location/obj.root" SYMROOT="$build_location/sym.root"
+xcodebuild -target "sample1234" OBJROOT="$build_location/obj.root" SYMROOT="$build_location/sym.root"
 
 #zip dYSM file for distribution 
 cd "$build_location/sym.root/Release-iphoneos/" || die "no such directory"
