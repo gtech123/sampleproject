@@ -8,7 +8,7 @@ build_location="/Users/admin/Documents/Builds/$appname"
 function deployToTestFlight 
 {
 
-curl http://testflightapp.com/api/builds.json -F file=@$build_location/$appname.ipa -F dsym=@$build_location/sym.root/Release-iphoneos/$appname.app.dSYM.zip -F api_token='439d831c7e49dbda0210fcc2821ac279_MTc2MzA5NTIwMTQtMDQtMDIgMDk6MjY6MzIuODYyNTg1' -F team_token='4eec8f2464f97aa31e333520338d7197_MzYyMjkzMjAxNC0wNC0wMiAwOTo0Mjo0Mi4xMzcxMTQ' -F notes='$appname uploaded via the testflight upload API' -F notify=True
+curl http://testflightapp.com/api/builds.json -F file=@$build_location/$appname.ipa -F dsym=@$build_location/sym.root/$configuration-$sdk/$appname.app.dSYM.zip -F api_token='439d831c7e49dbda0210fcc2821ac279_MTc2MzA5NTIwMTQtMDQtMDIgMDk6MjY6MzIuODYyNTg1' -F team_token='4eec8f2464f97aa31e333520338d7197_MzYyMjkzMjAxNC0wNC0wMiAwOTo0Mjo0Mi4xMzcxMTQ' -F notes='$appname uploaded via the testflight upload API' -F notify=True
 
 }
 function buildApp 
