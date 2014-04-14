@@ -1,4 +1,4 @@
-appname="sampleproject"
+appname="sample12"
 target_name="$appname"
 sdk="iphoneos"
 certificate="iPhone Distribution: HCL Technologies Ltd"
