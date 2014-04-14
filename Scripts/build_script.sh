@@ -13,7 +13,6 @@ function testflight
 {
 git remote add origin https://github.com/gtech123/sampleproject.git
 git push -u origin master
-git pull --rebase upstream master
 }
 function buildApp 
 
