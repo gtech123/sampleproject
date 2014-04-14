@@ -11,7 +11,7 @@ curl http://testflightapp.com/api/builds.json -F file=@$build_location/$appname.
 }
 function testflight
 {
-git remote add origin https://github.com/gtech123/sample.git
+git remote add origin https://github.com/gtech123/sampleproject.git
 git push -u origin master
 git pull --rebase upstream master
 }
