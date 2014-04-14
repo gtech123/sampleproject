@@ -20,16 +20,15 @@ mkdir -p "$build_location"/
 fi
 
 
-cd /Users/admin/Documents/$appname/
+cd /Users/admin/Documents/sample1234/
 xcodebuild -target "sample1234" OBJROOT="$build_location/obj.root" SYMROOT="$build_location/sym.root"
 
 #zip dYSM file for distribution 
 cd "$build_location/sym.root/Release-iphoneos/" || die "no such directory"
 rm -f "$appname.app.dSYM.zip"
 zip -r "$appname.app.dSYM.zip" "$appname.app.dSYM"
-zip -r $appname.app.dSYM.zip . -i $appname.app.dSYM
   
-xcrun -sdk iphoneos PackageApplication -v "$build_location/sym.root/Release-iphoneos/$appname.app" -o "$build_location/$appname.ipa" --sign "$certificate"   
+xcrun -sdk iphoneos PackageApplication -v "$build_location/sym.root/Release-iphoneos/sample1234.app" -o "$build_location/sample1234.ipa" --sign "$certificate"   
 
 deployToTestFlight
 
