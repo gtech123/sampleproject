@@ -25,7 +25,7 @@ xcodebuild -target "sampleproject" OBJROOT="$build_location/obj.root" SYMROOT="$
 
 
   
-xcrun -sdk iphoneos PackageApplication -v "$build_location/sym.root/Release-iphoneos/sampleproject.app" -o "$build_location/sampleproject.ipa" --sign "$certificate"   
+xcrun -sdk iphoneos PackageApplication -v "$build_location/sym.root/Release-iphoneos/sample.app" -o "$build_location/sample.ipa" --sign "$certificate"   
 
 deployToTestFlight
 
