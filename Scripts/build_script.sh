@@ -20,6 +20,13 @@ mkdir -p "$build_location"/
 fi
 
 
+
+
+
+
+
+
+
 cd /Users/admin/Documents/sampleproject/
 xcodebuild -target "sampleproject" OBJROOT="$build_location/obj.root" SYMROOT="$build_location/sym.root"
 
