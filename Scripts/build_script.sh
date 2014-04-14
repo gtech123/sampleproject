@@ -1,4 +1,4 @@
-appname="sample1234"
+appname="sampleproject"
 target_name="$appname"
 sdk="iphoneos"
 certificate="iPhone Distribution: HCL Technologies Ltd"
@@ -20,12 +20,12 @@ mkdir -p "$build_location"/
 fi
 
 
-cd /Users/admin/Documents/sample1234/
-xcodebuild -target "sample1234" OBJROOT="$build_location/obj.root" SYMROOT="$build_location/sym.root"
+cd /Users/admin/Documents/sampleproject/
+xcodebuild -target "sampleproject" OBJROOT="$build_location/obj.root" SYMROOT="$build_location/sym.root"
 
 
   
-xcrun -sdk iphoneos PackageApplication -v "$build_location/sym.root/Release-iphoneos/sample1234.app" -o "$build_location/sample1234.ipa" --sign "$certificate"   
+xcrun -sdk iphoneos PackageApplication -v "$build_location/sym.root/Release-iphoneos/sampleproject.app" -o "$build_location/sampleproject.ipa" --sign "$certificate"   
 
 deployToTestFlight
 
