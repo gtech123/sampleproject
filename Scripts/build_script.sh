@@ -1,4 +1,5 @@
 appname="sampleproject"
+##This is a Comment
 target_name="$appname"
 sdk="iphoneos"
 certificate="iPhone Distribution: HCL Technologies Ltd"
